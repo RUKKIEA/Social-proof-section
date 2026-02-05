@@ -1,6 +1,3 @@
-# Social-proof-section
-A responsive social proof section built with HTML and CSS, featuring customer reviews and ratings. Designed with a mobile-first approach using Flexbox and Grid to ensure clean layout, scalability, and seamless adaptation across screen sizes.
-
 # Frontend Mentor - Social proof section solution
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
