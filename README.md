@@ -77,9 +77,9 @@ Enhancing responsiveness for very large screens
 
 ### Author
 
-Website – Your Name
-Frontend Mentor – @yourusername
-Twitter – @yourusername
+
+Frontend Mentor – @Rukkiea
+
 
 ### Acknowledgments
 
