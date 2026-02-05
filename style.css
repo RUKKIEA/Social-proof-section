@@ -1,0 +1,226 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+  --clr-primary-dark: hsl(300, 43%, 22%);
+  --clr-primary-soft: hsl(333, 80%, 67%);
+  --clr-neutral-dark: hsl(303, 10%, 53%);
+  --clr-neutral-light: hsl(300, 24%, 96%);
+  --clr-white: #ffffff;
+
+  --radius-sm: 5px;
+  --radius-md: 10px;
+
+  --space-xs: 10px;
+  --space-sm: 16px;
+  --space-md: 20px;
+  --space-lg: 28px;
+
+  --ff-primary: 'League Spartan', system-ui, sans-serif;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  line-height: 1.6;
+}
+
+p,
+h1,
+h5 {
+  margin: 0;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+section {
+  padding: var(--space-md);
+  background-color: var(--clr-white);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-text {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  line-height: 1;
+}
+
+.hero-subtitle {
+  color: var(--clr-neutral-dark);
+  line-height: 1.8;
+  width: 85%;
+  margin: 16px auto 0;
+  font-weight: 400;
+}
+
+/* =========================
+   RATINGS
+========================= */
+.hero-stars {
+  margin-top: var(--space-md);
+}
+
+.ratings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: var(--clr-neutral-light);
+  padding: var(--space-xs);
+  margin: var(--space-sm) 0;
+  border-radius: var(--radius-sm);
+}
+
+.ratings-container h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   CUSTOMER REVIEWS
+========================= */
+.customer-review-section {
+  margin-top: var(--space-md);
+}
+
+.customer-review-card {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
+  padding: var(--space-lg) var(--space-md);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-md);
+}
+
+.customer-details {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.customer-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.identifier {
+  color: var(--clr-primary-soft);
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.review-text p {
+  margin-top: var(--space-md);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================
+   ATTRIBUTION
+========================= */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* =========================
+   DESKTOP STYLES
+========================= */
+@media (min-width: 768px) {
+  section {
+    padding: 50px 120px;
+  }
+
+  /* HERO LAYOUT */
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text {
+    width: 40%;
+    text-align: left;
+  }
+
+  .hero-stars {
+    width: 50%;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* RATINGS */
+  .ratings-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 32px 0;
+    width: 350px;
+  }
+
+  .ratings-container:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  .ratings-container:nth-child(3) {
+    margin-left: 100px;
+  }
+
+  /* REVIEWS GRID */
+  .customer-review-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+    align-items: start;
+  }
+
+  .customer-review-card {
+  align-self: start;
+}
+
+  .customer-review-card:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .customer-review-card:nth-child(3) {
+    margin-top: 60px;
+  }
+}
